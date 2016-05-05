@@ -48,12 +48,11 @@ var FacebookPageAgentPrototype = {
 			var uriEndpoint = getURI(path)
 			Request({
 				url 	: uriEndpoint,
-				formData: realParam,
-				json 	: true,
+				form 	: realParam,				
 				method 	: "POST"
 			},function(err,response,data){
 				if(err)return reject(err)
-				else return resolve(data)
+				else return resolve(JSON.parse(data))
 			})		
 		})		
 	})
