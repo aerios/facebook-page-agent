@@ -5,7 +5,7 @@ var ThrottleEngine 	= require("throttle-exec")
 var Promise 		= require("bluebird")
 var ThrottleInstance= new ThrottleEngine(10)
 
-var API_VERSION = "v2.5"
+var API_VERSION = "v2.6"
 var API_URL = "https://graph.facebook.com"
 
 function getURI(path){
